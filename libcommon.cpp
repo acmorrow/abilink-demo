@@ -14,6 +14,6 @@ message::message(std::string body)
 
 std::string message::to_string() {
     std::stringstream buffer;
-    buffer << "Message with id " << id() << " has contents " << "'" << body() << "'";
+    buffer << "Message with id " << id() << " has body " << "'" << body() << "'";
     return buffer.str();
 }
