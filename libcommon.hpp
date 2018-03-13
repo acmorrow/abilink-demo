@@ -19,6 +19,6 @@ public:
     std::string to_string();
 
 private:
-    std::uint64_t id_{0};
     std::string body_;
+    std::uint64_t id_{0};
 };
