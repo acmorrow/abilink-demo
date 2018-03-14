@@ -34,7 +34,7 @@ env_vars.Add('BUILD_DIR',
 
 env_vars.Add('CC')
 env_vars.Add('CXX')
-env_vars.Add('ABIDW', default='abidw')
+env_vars.Add('ABIDW')
 env_vars.Add('CCFLAGS', converter=variable_shlex_converter)
 env_vars.Add('CXXFLAGS', converter=variable_shlex_converter)
 env_vars.Add('CPPPATH', converter=variable_shlex_converter)
