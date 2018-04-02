@@ -1,5 +1,5 @@
 This repository contains a toy project that demonstrates the build
-system behavior mentioned in <LINK>.
+system behavior described in this [MongoDB Engineering Journal post](https://engineering.mongodb.com/post/pruning-dynamic-rebuilds-with-libabigail).
 
 The project contains two build systems, one written in SCons, and one
 written in CMake, which can then generate build systems for make,
