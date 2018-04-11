@@ -1,9 +1,8 @@
 This repository contains a toy project that demonstrates the build
 system behavior described in this [MongoDB Engineering Journal post](https://engineering.mongodb.com/post/pruning-dynamic-rebuilds-with-libabigail).
 
-The project contains two build systems, one written in SCons, and one
-written in CMake, which can then generate build systems for make,
-Ninja, etc.
+The project contains three build systems, one written in SCons, one
+written in CMake, and one written in Meson.
 
 The SCons build is configured so that you can build in three modes:
 
@@ -20,6 +19,11 @@ find it.
 The CMake build uses the traditional `-DBUILD_SHARED_LIBS` technique
 to decide whether or not to build shared libraries, and defaults to
 building in dynamic mode.
+
+The Meson build builds in the default way and you can toggle between
+shared and dynamic linking with the configuration tool: `meson
+configure -Bdefault_library=static/shared`. Meson has builtin link
+skipping based on the Chromium model, it does not support libabigail.
 
 There are three branches in the project:
 
